@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome To Tyketd api web page.  ');
+    return view('welcome');
 });
