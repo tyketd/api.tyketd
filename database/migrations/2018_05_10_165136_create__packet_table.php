@@ -15,7 +15,18 @@ class CreatePacketTable extends Migration
     {
         Schema::create('Packet', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string("name");
+            $table->string("deliveryTimeInterval");
+            $table->double("costEstimation");
+            $table->text("receiverDescription");
+            $table->string("container");
+            $table->double("width");
+            $table->double("height");
+            $table->double("length");
+            $table->double("weight");
+            $table->double("price");
+            $table->string("priceInterval");
+            $table->string('expeditionPlace');
         });
     }
 
