@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Anounce;
+use App\Announce;
 use Illuminate\Http\Request;
 
 class AnnounceController extends Controller
@@ -41,10 +41,10 @@ class AnnounceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Anounce  $anounce
+     * @param  \App\Announce  $Announce
      * @return \Illuminate\Http\Response
      */
-    public function show(Anounce $anounce)
+    public function show(Announce $Announce)
     {
         //
     }
@@ -52,10 +52,10 @@ class AnnounceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Anounce  $anounce
+     * @param  \App\Announce  $Announce
      * @return \Illuminate\Http\Response
      */
-    public function edit(Anounce $anounce)
+    public function edit(Announce $Announce)
     {
         //
     }
@@ -64,10 +64,10 @@ class AnnounceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Anounce  $anounce
+     * @param  \App\Announce  $Announce
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Anounce $anounce)
+    public function update(Request $request, Announce $Announce)
     {
         //
     }
@@ -75,10 +75,10 @@ class AnnounceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Anounce  $anounce
+     * @param  \App\Announce  $Announce
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Anounce $anounce)
+    public function destroy(Announce $Announce)
     {
         //
     }

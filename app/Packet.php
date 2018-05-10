@@ -10,4 +10,8 @@ class Packet extends Model
                            "receiverDescription","container","width","height",
                             "length","weight","price","priceInterval","expeditionPlace"
                           ];
+
+    public function Packets(){
+        return $this->hasMany("\APP\Packet");
+    }
 }

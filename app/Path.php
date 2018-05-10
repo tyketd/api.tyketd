@@ -11,4 +11,8 @@ class Path extends Model
     public  function ForwardingAgents(){
         return $this->hasMany("\APP\ForwardingAgent");
     }
+
+    public function Transmitter(){
+        return $this->belongsTo("\APP\Transmitter");
+    }
 }
