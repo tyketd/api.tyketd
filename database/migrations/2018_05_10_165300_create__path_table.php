@@ -15,7 +15,9 @@ class CreatePathTable extends Migration
     {
         Schema::create('Path', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->dateTime("dateOfDeparture");
+            $table->dateTime("dateOfArrival");
+            $table->string("planeTicket");
         });
     }
 
