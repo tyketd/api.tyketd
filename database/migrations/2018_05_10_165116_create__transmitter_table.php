@@ -15,7 +15,12 @@ class CreateTransmitterTable extends Migration
     {
         Schema::create('Transmitter', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->boolean("isEnterprise");
+            $table->string("website");
+            $table->string("secretId");
+            $table->string("apiKey");
+            $table->text("service");
+
         });
     }
 
