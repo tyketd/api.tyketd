@@ -15,7 +15,9 @@ class CreateAnnounceTable extends Migration
     {
         Schema::create('Announce', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string("from");
+            $table->string("to");
+            $table->string("description");
         });
     }
 
