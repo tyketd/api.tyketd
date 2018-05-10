@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Packet extends Model
+class Packet extends Announce
 {
     protected $fillable = ["name","deliveryTimeInterval","costEstimation",
                            "receiverDescription","container","width","height",

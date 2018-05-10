@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ForwardingAgent extends Model
+class ForwardingAgent extends User
 {
     protected $fillable = ["passportNumber","passportPicture","bankAccountNumber"];
 

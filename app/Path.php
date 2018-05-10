@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Path extends Model
+class Path extends Announce
 {
     protected  $fillable =["dateOfDeparture","dateOfArrival","planeTicket"];
 

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Administrator extends Model
+class Administrator extends User
 {
 
     public function ForwardingAgents(){

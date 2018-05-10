@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Transmitter extends Model
+class Transmitter extends User
 {
     protected  $fillable = ["isEnterprise","website","secretId","apiKey","service"];
 
