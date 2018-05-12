@@ -14,7 +14,7 @@ class CreatePathTable extends Migration
     public function up()
     {
         Schema::create('Path', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->dateTime("dateOfDeparture");
             $table->dateTime("dateOfArrival");
             $table->string("planeTicket");

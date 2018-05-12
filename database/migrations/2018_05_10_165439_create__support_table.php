@@ -14,7 +14,7 @@ class CreateSupportTable extends Migration
     public function up()
     {
         Schema::create('Support', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->timestamps();
         });
     }

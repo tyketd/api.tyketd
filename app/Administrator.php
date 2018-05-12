@@ -4,9 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Administrator extends User
+class Administrator extends Model
 {
 
+    protected $fillable = ['id'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id');
+    }
     public function ForwardingAgents(){
         return $this->hasMany("\APP\ForwardingAgent");
     }

@@ -14,7 +14,7 @@ class CreateTransmitterTable extends Migration
     public function up()
     {
         Schema::create('Transmitter', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->boolean("isEnterprise");
             $table->string("website");
             $table->string("secretId");

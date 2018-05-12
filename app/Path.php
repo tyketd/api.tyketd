@@ -4,9 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Path extends Announce
+class Path extends Model
 {
-    protected  $fillable =["dateOfDeparture","dateOfArrival","planeTicket"];
+    protected  $fillable =["id","dateOfDeparture","dateOfArrival","planeTicket"];
+
+    public function annonce()
+    {
+        return $this->belongsTo(Announce::class, 'id');
+    }
 
     public  function ForwardingAgents(){
         return $this->hasMany("\APP\ForwardingAgent");

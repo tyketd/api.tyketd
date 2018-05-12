@@ -14,7 +14,7 @@ class CreateAdministratorTable extends Migration
     public function up()
     {
         Schema::create('Administrator', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class CreateForwardingAgentTable extends Migration
     public function up()
     {
         Schema::create('ForwardingAgent', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->string("passportNumber");
             $table->string("passportPicture");
             $table->string("bankAccountNumber");

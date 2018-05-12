@@ -4,9 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ForwardingAgent extends User
+class ForwardingAgent extends Model
 {
-    protected $fillable = ["passportNumber","passportPicture","bankAccountNumber"];
+    protected $fillable = ["id","passportNumber","passportPicture","bankAccountNumber"];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id');
+    }
 
     public function  Path(){
         return $this->belongsTo("\App\Path");
